@@ -1,0 +1,241 @@
+<h3>PDF in html</h3>
+
+    <body xmlns="http://www.w3.org/1999/xhtml">
+
+<table>
+	<tr>
+		<td style="vertical-align:top">
+			<table class="box-player player-left">
+				<tr><td>
+					<span class="circle-number">1</span>
+					<span class="player-name">jose22 chan</span>
+				</td></tr>
+				<tr><td>
+					<span class="circle-number">2</span>
+					<span class="player-name">jose chan</span>
+				</td></tr>
+				<tr><td>
+					<span class="circle-number">3</span>
+					<span class="player-name">jose chan</span>
+				</td></tr>
+				<tr><td>
+					<span class="circle-number">4</span>
+					<span class="player-name">jose chan</span>
+				</td></tr>
+				<tr><td>
+					<span class="circle-number">5</span>
+					<span class="player-name">jose chan</span>
+				</td></tr>
+				<tr><td>
+					<span class="circle-number">6</span>
+					<span class="player-name">jose chan</span>
+				</td></tr>
+				<tr><td>
+					<span class="circle-number">7</span>
+					<span class="player-name">jose chan</span>
+				</td></tr>
+				<tr><td>
+					<span class="circle-number">8</span>
+					<span class="player-name">jose chan</span>
+				</td></tr>
+			</table>
+		</td>
+		<td style="vertical-align:top">
+			<table class="dart dart-left dart-1">
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+			</table>
+		</td>
+		<td style="vertical-align:top">
+			<table class="dart dart-left dart-2">
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+			</table>
+		</td>
+		<td style="vertical-align:top">
+			<table class="dart dart-left dart-3">
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+			</table>
+		</td>
+		<td style="vertical-align:top">
+			<table class="dart dart-left dart-fin">
+				<tr><td></td><td></td></tr>
+			</table>
+		</td>
+		<td style="vertical-align:top">
+			<table class="dart dart-right dart-3">
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+			</table>
+		</td>
+		<td style="vertical-align:top">
+			<table class="dart dart-right dart-2">
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+			</table>
+		</td>
+		<td style="vertical-align:top">
+			<table class="dart dart-right dart-1">
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+			</table>
+		</td>
+		<td style="vertical-align:top">
+			<table class="box-player player-right">
+				<tr><td>
+					<span class="player-name">jodfdgfdse chan</span>
+					<span class="circle-number">9</span>
+				</td></tr>
+				<tr><td>
+					<span class="player-name">jose chan</span>
+					<span class="circle-number">10</span>
+				</td></tr>
+				<tr><td>
+					<span class="player-name">jose chan</span>
+					<span class="circle-number">11</span>
+				</td></tr>
+				<tr><td>
+					<span class="player-name">jose chan</span>
+					<span class="circle-number">12</span>
+				</td></tr>
+				<tr><td>
+					<span class="player-name">jose chan</span>
+					<span class="circle-number">13</span>
+				</td></tr>
+				<tr><td>
+					<span class="player-name">jose chan</span>
+					<span class="circle-number">14</span>
+				</td></tr>
+				<tr><td>
+					<span class="player-name">jose chan</span>
+					<span class="circle-number">15</span>
+				</td></tr>
+				<tr><td>
+					<span class="player-name">jose chan</span>
+					<span class="circle-number">16</span>
+				</td></tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+
+    </body>
+
+
+
+<style>
+table { 
+    border-collapse: separate; 
+    border-spacing:0;
+}
+span.player-name{
+	margin-left:-20px;
+}
+table.box-player{
+    border-spacing: 0 20px; 
+    width:200px;
+}
+table.box-player td {
+    border: solid 1px #000;
+    border-style: solid none;
+    padding: 10px 0;
+    background-color: cyan;
+    border-style: solid;
+    border-radius: 	10px;
+}
+table.dart-1{
+	margin-top:40px;
+    width: 50px;
+}
+table.dart-2{
+	margin-top:70px;
+    width: 50px;
+}
+table.dart-3{
+	margin-top:130px;
+    width: 50px;
+}
+table.dart-1 td{
+	border: solid 1px;
+    height: 68px;
+}
+table.dart-2 td{
+	border: solid 1px;
+    height: 137px;
+}
+table.dart-3 td{
+	border: solid 1px;
+    height: 280px;
+}
+table.dart-left td{
+	border-left:0;
+}
+table.dart-left tr:nth-child(even) td {
+    border:0!important;
+}
+table.dart-right td{
+	border-right:0;
+}
+table.dart-right tr:nth-child(even) td {
+    border:0!important;
+}
+table.dart-fin{
+	height: 40px;
+	width: 	50px;
+	margin-top:220px;
+}
+table.dart-fin td{
+	border-bottom: 	solid 1px;
+    width: 100px;
+}
+table.dart-fin td:first-child {
+	border-right:solid 1px;
+}
+.player-left span.circle-number {
+	display:inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+    position: relative;
+    left: 189px;
+    border-radius: 50%;
+    padding:2px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 16px Arial, sans-serif;    
+}
+.player-right span.circle-number {
+	display:inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+    position: relative;
+    left: -187px;
+    border-radius: 50%;
+    padding:2px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 16px Arial, sans-serif;
+}
+.player-right td{
+	text-align: right;
+}
+</style>
