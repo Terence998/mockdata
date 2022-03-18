@@ -99,12 +99,7 @@ class Pdf_card {
 		$pdf->SetFont('msungstdlight', 'B', 20);
 		$pdf->setXY($centerLine+72,$baseY+50);
 		$pdf->MultiCell(80, 10, $no_card, 0,'C');
-		// if($data[$i]['student_card']==''){
-		// 	$pdf->setXY($centerLine+72,$baseY+50);
-		// 	$pdf->MultiCell(80, 10, $no_card, 0,'C');
-		// }else{
-		// 	$pdf->Image(base_url('/images/'.$data[$i]['student_card']), $centerLine+71, $baseY+35, 80, 0, '', '', '', false, 300, '', false, false, 0);	
-		// }
+
 		$pdf->setXY($centerLine,$baseY+5);
 		$pdf->Cell(20,10,$data['school_name'],0,1,'C');
 		$pdf->setXY($centerLine,$baseY+30);
@@ -113,10 +108,6 @@ class Pdf_card {
 		$pdf->SetFont('kozgopromedium', 'B', 20);
 		$pdf->setXY($centerLine,$baseY+40);
 		$pdf->Cell(20,10,$data['name_pt'],0,1,'C');
-		//$pdf->SetFont('helvetica', 'B', 40);
-		//$pdf->SetFont('kozminproregular', 'B', 40);
-		//$pdf->SetFont('pdfahelvetica', 'B', 40);
-		//$pdf->SetFont('stsongstdlight', 'B', 40);
 
 		$pdf->SetFont('kozgopromedium', 'B', 20);
 		$pdf->setXY($centerLine,$baseY+15);
