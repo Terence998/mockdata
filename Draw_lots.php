@@ -3,11 +3,12 @@
 class Draw_lots {
     public function get_result($players){
 		$players=$this->shuffle_players($players);
-		$playerCount=count($players);
+		$playerCount=sizeof($players);
 		$gameSize=$this->get_game_size($players);
 		$seedCount=$this->get_seed_size($players);
 		$playList=array_fill(0,$gameSize-1,null);
 		$playSequence=$this->get_eMap($gameSize);
+
 		$chunk2=array_chunk($playSequence,sizeof($playSequence)/2);
 		//assign upper bout players
 		foreach ($chunk2[0] as $i) {
@@ -22,7 +23,7 @@ class Draw_lots {
 			$playList[$i]=array_shift($players);
 		}
 		//shuffle bout upper with lower
-		$playList=$this->shuffle_bout($playList);
+		//$playList=$this->shuffle_bout($playList);
 		//remove empty element/null in the playerList
 		$playList=array_filter($playList, function($value) { return !is_null($value) && $value !== '';});
 		//assign bout position for players	
@@ -31,7 +32,7 @@ class Draw_lots {
 			$playList[$i]['position']=$i;
 		}
 		//sort by Players sequence
-		$columns = array_column($playList, 'seq');
+		$columns = array_column($playList, 'bout_seq');
 		array_multisort($columns, SORT_ASC, $playList);
 		return $playList;
     }
@@ -72,6 +73,9 @@ class Draw_lots {
 	}
 	//shuffle players and move seed to from;
 	public function shuffle_players($players){
+		foreach ($players as $i=>$player){
+			$players[$i]['bout_seq']=$i;
+		}
 		shuffle($players);
 		$playerCount=count($players);
 		$cnt=0;
