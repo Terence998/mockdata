@@ -8,10 +8,12 @@ class Draw extends MY_Controller {
 
 	public function test2(){
 		$this->load->library("draw_lots");
-		$players=$this->get_players();
+		//$players=$this->get_players();
+		$players=$this->db->where('program_id',2)->get('view_match_programs_athletes')->result();
+		$players=json_decode(json_encode($players),true);
 		$results=$this->draw_lots->get_result($players);
 		foreach($results as $result){
-			echo json_encode($result);
+			echo json_encode($result['name_zh']);
 			echo '<br>';	
 		}
 	}
